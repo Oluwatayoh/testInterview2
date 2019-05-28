@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="movie-details col-sm-4">
+        <mat-card class="card">
+          <img src="{{_url}}{{movies.movieThumbnail}}" alt="movie_thumbnail" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">{{movies.movieName}}</h4>
+            <a>Format:<br> <strong>{{movies.format}}</strong></a><br>
+            <a>Opening Date: <br> <strong>{{movies.openingDate}}</strong></a><br>
+            <mat-checkbox disabled checked="{{movies.isRestricted}}">18 Years +</mat-checkbox>
+            <p class="card-text">{{movies.description}}</p>
+          </div>
+        </mat-card>
+      </div>
+      <!-- <div class="moviePoster col-sm-8">
+        <img src="{{_url}}{{movies.moviePosterUrl}}" alt="moviePoster">
+      </div> -->
+    </div>
+
+  </div>
+</div>

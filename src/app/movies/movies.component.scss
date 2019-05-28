@@ -1,0 +1,31 @@
+.row {
+  padding: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.movie-details {
+  text-align: center;
+}
+
+strong {
+  font-size: 20px;
+}
+.card-text {
+  font-size: 10px;
+}
+mat-checkbox {
+  font-size: 12px;
+}
+mat-card {
+  padding: 0px !important;
+}
+
+.card-body {
+  background: rgba(225, 245, 254, 0.17);
+
+}
+.card-title,
+strong {
+  font-weight: 700;
+}
