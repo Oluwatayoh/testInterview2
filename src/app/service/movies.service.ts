@@ -10,13 +10,21 @@ export class MoviesService {
 
   private _url: string = "assets/data/movies.json";
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getMovies(): Observable<IMovies[]>{
+  getMovies(): Observable<IMovies[]> {
     return this.http.get<IMovies[]>(this._url);
   }
 
-  postMovies(moviesData){
+  postMovies(moviesData) {
     return this.http.post<any>(this._url, moviesData);
+  }
+
+  deleteMovies(id: number) {
+    return this.http.delete(`${this._url}/movies/${id}`);
+  }
+
+  updateMovies(moviesData) {
+    return this.http.put<any>(this._url, moviesData);
   }
 }
